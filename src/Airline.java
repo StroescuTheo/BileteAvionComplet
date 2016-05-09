@@ -6,7 +6,7 @@ public class Airline {
 	private String PlaneModel;
 	private int PlaneNo;
 
-	public void Afisare()
+	public void Afisare() //This is just a simple test, to see that we wokr
 	{
 		System.out.println("Name:"+Name);
 		System.out.println("Phone:"+Phone);
