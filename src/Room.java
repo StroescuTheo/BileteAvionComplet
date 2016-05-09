@@ -14,6 +14,11 @@ public class Room {
 		this.RoomType=RoomType;
 		
 	}
+	public void  RoomEQ(Room r)
+	{
+		this.RoomNo=r.getRoomNo();
+		this.RoomType=r.getRoomType();
+	}
 	public int getRoomNo() {
 		return RoomNo;
 		//	throw new UnsupportedOperationException();
@@ -38,6 +43,8 @@ public class Room {
 	}
 
 	public Room() {
+		this.RoomNo=1;
+		this.RoomType="Normal";
 		//	throw new UnsupportedOperationException();
 	}
 }

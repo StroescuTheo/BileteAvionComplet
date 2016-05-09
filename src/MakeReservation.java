@@ -11,7 +11,7 @@ public class MakeReservation {
 	@Test
 	public void test() {
     	 Airport a[]= {new Airport("Roma","Soleni",23,44), new Airport("France","Croisant",11,14), new Airport("Spain","Selerere",76,33),new Airport("Germany","Groaz",43,34)};
-    	   
+    	  Room rooms[]={new Room(34,"Normal"),new Room(35,"Normal"),new Room(36,"King"),new Room(37,"Small"),new Room(38,"Normal")};
 		System.out.println("Hello. Welcome to our agency. What is your name?: ");
 		String Name="Bob";
 		String Surname="Saget";
@@ -38,8 +38,13 @@ public class MakeReservation {
 		String UserChoise=a[r.nextInt(a.length)].getLocation();
 		System.out.println("You chose "+UserChoise);
 		
+	//	Hotel test=new Hotel("dsa",2,rooms);
 		 Hotel h[]= {new Hotel("Sork",5), new Hotel("HonHonOuiOui",1), new Hotel("Gerurnd",3),new Hotel("Nazza",4)};
-		 h[0].sortare(h);
+		
+		 
+		 
+		
+		 h[0].sortare(h);	
 		 System.out.println("Please Chose from one of the Avaible Hotels in "+UserChoise+": ");
 		 for(int i=0;i<h.length;i++)
 		 {
@@ -52,12 +57,16 @@ public class MakeReservation {
 			 if(i<h.length-1)
 				 System.out.print(", ");
 		 }
-		 String HotelChoise=h[r.nextInt(h.length)].getName();
+		 int intHotel=r.nextInt(h.length);
+		 String HotelChoise=h[intHotel].getName();
 		 
-		
+		// h[0].AddRooms(rooms);
 		 
 		 System.out.println("");
-		 System.out.println("Mr. "+c.getName()+" from "+c.getAdress()+" will be staying at the "+ HotelChoise + " hotel in "+ UserChoise);
+		 System.out.print("Mr. "+c.getName()+" from "+c.getAdress()+" will be staying at the "+ HotelChoise + " hotel in "+ UserChoise);
+		 System.out.println("In room: ");
+		 Room x=(h[intHotel].ReturnAnyRoomAvailable());
+		 x.Afisare();
 //		fail("Not yet implemented");
 	}
 
