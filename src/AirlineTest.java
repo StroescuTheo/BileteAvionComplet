@@ -1,8 +1,8 @@
-
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class AirlineTest {
+public class AirlineTest extends Airline {
 
 	@Test
 	public void test() {

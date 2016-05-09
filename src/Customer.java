@@ -18,8 +18,8 @@ public class Customer {
 		System.out.println("SSN:"+SSN);
 		System.out.println("Adress:"+Adress);
 		System.out.println("Email:"+Email);
-		System.out.println("Reservation:"+Reservation);
-		System.out.println("Laguage:"+Laguage);
+		//System.out.println("Reservation: ") ;this.getReservation().Afisare();
+		//System.out.println("Laguage: "); this.getLaguage().Afisare();
 		System.out.println("Varsta:"+Varsta);
 		
 	}
