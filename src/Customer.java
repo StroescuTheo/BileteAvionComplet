@@ -13,17 +13,17 @@ public class Customer {
 	public void Afisare()
 	{
 		System.out.println("Name:"+Name);
-		System.out.println("Phone:"+Phone);
 		System.out.println("Surname:"+Surname);
 		System.out.println("SSN:"+SSN);
 		System.out.println("Adress:"+Adress);
+		System.out.println("Phone:"+Phone);
 		System.out.println("Email:"+Email);
 		System.out.println("Reservation:"+Reservation);
 		System.out.println("Laguage:"+Laguage);
 		System.out.println("Varsta:"+Varsta);
 		
 	}
-	public Customer(String Name,String Phone,String Surname,String SSN,String Adress,String Email,Reservation Reservation,Laguage Laguage,int Varsta)
+	public Customer(String Name,String Surname,String SSN,String Adress,String Phone,String Email,Reservation Reservation,Laguage Laguage,int Varsta)
 	{
 		this.Name=Name;
 		this.Phone=Phone;
