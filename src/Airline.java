@@ -7,7 +7,7 @@ public class Airline {
 	private int PlaneNo;
 
 	public void Afisare() //This is just a simple test, to see that we wokr
-	{//acknoledge
+	{//acknoledge merge?
 		
 		System.out.println("Name:"+Name);
 		System.out.println("Phone:"+Phone);
