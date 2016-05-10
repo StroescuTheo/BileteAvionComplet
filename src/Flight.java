@@ -6,7 +6,7 @@ public class Flight {
 	private int Gate;
 	private String ArrivalTime;
 	private String Seats;
-
+//mofigvstr
 	public void Afisare()
 	{
 		System.out.println("Number:"+Number);
