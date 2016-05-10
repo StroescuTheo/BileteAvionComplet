@@ -8,11 +8,14 @@ public class Route {
 
 	public void Afisare()
 	{
+		System.out.println("Rout detailes : ");
 		System.out.println("Departure:"+Departure);
 		System.out.println("Arrival:"+Arrival);
 		System.out.println("Stops:"+Stops);
-		System.out.println("Airport:"+ADeparture);
-		System.out.println("Airport:"+AArrival);
+		//System.out.println("Airport:"+ADeparture);
+		//System.out.println("Airport:"+AArrival);
+		ADeparture.Afisare();
+		AArrival.Afisare();
 	}
 	public Route(String Departure,String Arrival,String Stops , Airport ADeparture , Airport AArrival)
 	{

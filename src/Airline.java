@@ -9,12 +9,14 @@ public class Airline {
 
 	public void Afisare() 
 	{
+		System.out.println("Airline detailes : ");
 		System.out.println("Name:"+Name);
 		System.out.println("Phone:"+Phone);
 		System.out.println("PilotName:"+PilotName);
 		System.out.println("PlaneModel:"+PlaneModel);
 		System.out.println("PlaneNo:"+PlaneNo);
-		System.out.println("Route:"+Ruta);
+		//System.out.println("Route:"+Ruta);
+		Ruta.Afisare();
 	}
 	public Airline(String Name,String Phone,String PilotName,String PlaneModel,int PlaneNo, Route Ruta)
 	{

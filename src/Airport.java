@@ -7,12 +7,13 @@ public class Airport {
 
 	public void Afisare()
 	{
+		System.out.println("Airport detailes : ");
 		System.out.println("Name:"+Name);
 		System.out.println("Location:"+Location);
 		System.out.println("Gate:"+Gate);
 		System.out.println("Terminal:"+Terminal);
 	}
-	public Airport(String Location,String Name,int Gate,int Terminal)
+	public Airport(String Name,String Location,int Gate,int Terminal)
 	{
 		this.Name=Name;
 		this.Location=Location;

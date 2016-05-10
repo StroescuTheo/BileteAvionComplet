@@ -10,13 +10,19 @@ public class Flight {
 	
 	public void Afisare()
 	{
+		System.out.println("Flight detailes : ");
 		System.out.println("Number:"+Number);
 		System.out.println("DepartureTime:"+DepartureTime);
 		System.out.println("BoardingTime:"+BoardingTime);
 		System.out.println("Gate:"+Gate);
 		System.out.println("ArrivalTime:"+ArrivalTime);
 		System.out.println("Seats:"+Seats);
-		System.out.println("Airline:"+Line);
+		System.out.println();
+		Line.Afisare();
+		System.out.println();
+		System.out.println("//////////////////////////////////////////");
+		System.out.println();
+		
 	}
 	public Flight(int Number,String DepartureTime,String BoardingTime,int Gate,String ArrivalTime,String Seats ,  Airline Line)
 	{
