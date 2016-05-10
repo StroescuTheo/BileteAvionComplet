@@ -7,9 +7,9 @@ public class StayTEST {
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		
-		//Sa returneze pentru cate zile are cazare 
-		//o functie sa calculeze diferenta dintre checkin si checkout
+		Stay s= new Stay("12:45","14:15");
+		System.out.println("Checkin: "+s.getCheckinTime()+"\nCheckout:"+s.getCheckoutTime());
+		 
 	}
 
 }

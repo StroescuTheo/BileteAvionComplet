@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -10,6 +10,8 @@ public class AirlineTest extends Airline {
         Airline.sortare(a); 
         for(int i=0;i<4;i++)
     			a[i].Afisare();
+        for(int i=0;i<4;i++)
+        	System.out.println(a[i].getName()+a[i].getPhone()+a[i].getPilotName()+a[i].getPlaneModel()+a[i].getPlaneNo());
 		//fail("Not yet implemented");
 	}
 

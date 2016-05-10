@@ -7,9 +7,13 @@ public class LaguageTEST {
 	@Test
 	public void test() {
 		//fail("Not yet implemented");
-		
-		//o functie care sa spuna daca bagajul poate fi bagat in cala sau tinut 
-		//in avion in functie de greutate 
+		Laguage l = new Laguage(40,"Popescu Popescu","0123210230",true,"Bucuresti",false);
+		System.out.println("Weight: "+l.getWeight());
+		System.out.println("Name: "+l.getPossesorName());
+		System.out.println("Phone: "+l.getPhone());
+		System.out.println("Fragility: "+l.getFragility());
+		System.out.println("Destination: "+l.getDestination());
+		System.out.println("Lost: "+l.getLost());
 	}
 
 }

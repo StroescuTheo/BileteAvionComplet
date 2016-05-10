@@ -13,11 +13,9 @@ public class RoomTEST {
 		r2.Afisare();
 		Room r3 = new Room(3,"economic,smoking room,balconi,family");
 		r3.Afisare();
-		
-		//Putem pune intrebare gen "Ce fel de camera doriti?
-		//Si daca cuvantul tastat se potriveste cu unul din criteriile camerei
-		//Sa afiseze camera respectiva plus mesajul 
-		//"Ati rezervat camera cu numarul..."
+		System.out.println("\nNumber: "+r1.getRoomNo()+"\nType:"+r1.getRoomType());
+		System.out.println("\n\nNumber: "+r2.getRoomNo()+"\nType:"+r2.getRoomType());
+		System.out.println("\n\nNumber: "+r3.getRoomNo()+"\nType:"+r3.getRoomType());
 	}
 
 }

@@ -6,7 +6,7 @@ public class Flight {
 	private int Gate;
 	private String ArrivalTime;
 	private String Seats;
-//mofigvstr
+	
 	public void Afisare()
 	{
 		System.out.println("Number:"+Number);
@@ -16,7 +16,7 @@ public class Flight {
 		System.out.println("ArrivalTime:"+ArrivalTime);
 		System.out.println("Seats:"+Seats);
 	}
-	public Flight(int Number,String DepartureTime,String BoardingTime,String ArrivalTime,int Gate,String Seats)
+	public Flight(int Number,String DepartureTime,String BoardingTime,int Gate,String ArrivalTime,String Seats)
 	{
 		this.Number=Number;
 		this.DepartureTime=DepartureTime;
