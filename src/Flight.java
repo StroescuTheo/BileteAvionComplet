@@ -6,6 +6,7 @@ public class Flight {
 	private int Gate;
 	private String ArrivalTime;
 	private String Seats;
+	private Airline Line;
 	
 	public void Afisare()
 	{
@@ -15,8 +16,9 @@ public class Flight {
 		System.out.println("Gate:"+Gate);
 		System.out.println("ArrivalTime:"+ArrivalTime);
 		System.out.println("Seats:"+Seats);
+		System.out.println("Airline:"+Line);
 	}
-	public Flight(int Number,String DepartureTime,String BoardingTime,int Gate,String ArrivalTime,String Seats)
+	public Flight(int Number,String DepartureTime,String BoardingTime,int Gate,String ArrivalTime,String Seats ,  Airline Line)
 	{
 		this.Number=Number;
 		this.DepartureTime=DepartureTime;
@@ -24,6 +26,7 @@ public class Flight {
 		this.Gate=Gate;
 		this.ArrivalTime=ArrivalTime;
 		this.Seats=Seats;
+		this.Line = Line ;
 	}
 	public int getNumber() {
 		return Number;
@@ -83,6 +86,16 @@ public class Flight {
 
 	public void setSeats(String Seats) {
 		this.Seats=Seats;
+//		throw new UnsupportedOperationException();
+	}
+	
+	public Airline getAirline() {
+		return Line;
+//		throw new UnsupportedOperationException();
+	}
+
+	public void setAirline(Airline Line) {
+		this.Line=Line;
 //		throw new UnsupportedOperationException();
 	}
 

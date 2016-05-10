@@ -5,23 +5,25 @@ public class Airline {
 	private String PilotName;
 	private String PlaneModel;
 	private int PlaneNo;
+	private Route Ruta;
 
-	public void Afisare() //This is just a simple test, to see that we wokr
-	{//acknoledge merge?
-		
+	public void Afisare() 
+	{
 		System.out.println("Name:"+Name);
 		System.out.println("Phone:"+Phone);
 		System.out.println("PilotName:"+PilotName);
 		System.out.println("PlaneModel:"+PlaneModel);
 		System.out.println("PlaneNo:"+PlaneNo);
+		System.out.println("Route:"+Ruta);
 	}
-	public Airline(String Name,String Phone,String PilotName,String PlaneModel,int PlaneNo)
+	public Airline(String Name,String Phone,String PilotName,String PlaneModel,int PlaneNo, Route Ruta)
 	{
 		this.Name=Name;
 		this.Phone=Phone;
 		this.PilotName=PilotName;
 		this.PlaneModel=PlaneModel;
 		this.PlaneNo=PlaneNo;
+		this.Ruta = Ruta ;
 	}
 	public static  void sortare (Airline a[])
 	{
@@ -94,7 +96,15 @@ public class Airline {
 		this.PlaneNo=PlaneNo;
 //		throw new UnsupportedOperationException();
 	}
+	public Route getRoute() {
+		return Ruta;
+//		throw new UnsupportedOperationException();
+	}
 
+	public void setRoute(Route Ruta) {
+		this.Ruta=Ruta;
+//		throw new UnsupportedOperationException();
+	}
 	public Airline() {
 		
 //		throw new UnsupportedOperationException();
