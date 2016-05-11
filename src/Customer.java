@@ -21,7 +21,7 @@ public class Customer {
 		//System.out.println("Reservation: ") ;this.getReservation().Afisare();
 		//System.out.println("Laguage: "); this.getLaguage().Afisare();
 		System.out.println("Varsta:"+Varsta);
-		
+
 	}
 	public Customer(String Name,String Surname,String SSN,String Adress,String Phone,String Email,Reservation Reservation,Laguage Laguage,int Varsta)
 	{
@@ -37,97 +37,97 @@ public class Customer {
 	}
 	public String getName() {
 		return Name;
-		
-		//throw new UnsupportedOperationException();
+
+
 	}
 
 	public void setName(String Name) {
 		this.Name=Name;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getSurname() {
 		return Surname;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setSurname(String Surname) {
 		this.Surname=Surname;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getSSN() {
 		return SSN;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setSSN(String SSN) {
 		this.SSN=SSN;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getAdress() {
 		return Adress;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setAdress(String Adress) {
 		this.Adress=Adress;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getPhone() {
 		return Phone;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setPhone(String Phone) {
 		this.Phone=Phone;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getEmail() {
 		return Email;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setEmail(String Email) {
 		this.Email=Email;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public Reservation getReservation() {
 		return Reservation;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setReservation(Reservation Reservation) {
 		this.Reservation=Reservation;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public Laguage getLaguage() {
 		return Laguage;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setLaguage(Laguage Laguage) {
 		this.Laguage=Laguage;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public Customer() {
-		
-		//throw new UnsupportedOperationException();
+
+
 	}
 	public int getVarsta() {
-		//throw new UnsupportedOperationException();
-	return Varsta;
+
+		return Varsta;
 	}
 
 	public void setVarsta(int Varsta) {
 		this.Varsta=Varsta;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public boolean VarstaCheck(int Varsta){
@@ -138,7 +138,7 @@ public class Customer {
 		{
 			x.Reservation = new Reservation();
 			System.out.println("C`est Ne pas possible");
-			}
+		}
 	}
-	
+
 }

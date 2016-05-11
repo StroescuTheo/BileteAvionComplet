@@ -6,7 +6,7 @@ public class LaguageTEST {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+
 		Laguage l = new Laguage(40,"Popescu Popescu","0123210230",true,"Bucuresti",false);
 		System.out.println("Weight: "+l.getWeight());
 		System.out.println("Name: "+l.getPossesorName());

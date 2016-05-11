@@ -12,8 +12,8 @@ public class Route {
 		System.out.println("Departure:"+Departure);
 		System.out.println("Arrival:"+Arrival);
 		System.out.println("Stops:"+Stops);
-		//System.out.println("Airport:"+ADeparture);
-		//System.out.println("Airport:"+AArrival);
+
+
 		ADeparture.Afisare();
 		AArrival.Afisare();
 	}
@@ -27,47 +27,47 @@ public class Route {
 	}
 	public String getDeparture() {
 		return Departure;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setDeparture(String Departure) {
-		this.Departure=Departure;//throw new UnsupportedOperationException();
+		this.Departure=Departure;
 	}
 
 	public String getArrival() {
-		return Arrival;		//throw new UnsupportedOperationException();
+		return Arrival;		
 	}
 
 	public void setArrival(String Arrival) {
-		this.Arrival=Arrival;//throw new UnsupportedOperationException();
+		this.Arrival=Arrival;
 	}
 
 	public String getStops() {
 		return Stops;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setStops(String Stops) {
-		this.Stops=Stops;//throw new UnsupportedOperationException();
+		this.Stops=Stops;
 	}
 
 	public Airport getADeparture() {
-		return ADeparture;		//throw new UnsupportedOperationException();
+		return ADeparture;		
 	}
 
 	public void setADeparture(Airport ADeparture) {
-		this.ADeparture=ADeparture;//throw new UnsupportedOperationException();
+		this.ADeparture=ADeparture;
 	}
-	
+
 	public Airport getAAirport() {
-		return AArrival;		//throw new UnsupportedOperationException();
+		return AArrival;		
 	}
 
 	public void setAAirport(Airport AArrival) {
-		this.AArrival=AArrival;//throw new UnsupportedOperationException();
+		this.AArrival=AArrival;
 	}
-	
+
 	public Route() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

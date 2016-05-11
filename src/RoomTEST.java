@@ -6,7 +6,7 @@ public class RoomTEST {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+
 		Room r1 = new Room(1,"economic,smoking room,balconi,double");
 		r1.Afisare();
 		Room r2 = new Room(2,"economic,no smoking room,fara balcon,single");

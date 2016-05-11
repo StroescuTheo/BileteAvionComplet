@@ -22,44 +22,44 @@ public class Airport {
 	}
 	public String getLocation() {
 		return Location;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setLocation(String Location) {
 		this.Location=Location;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getName() {
-		//throw new UnsupportedOperationException();
+
 		return Name;
 	}
 
 	public void setName(String Name) {
 		this.Name=Name;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public int getGate() {
 		return Gate;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setGate(int Gate) {
-		this.Gate=Gate;//throw new UnsupportedOperationException();
+		this.Gate=Gate;
 	}
 
 	public int getTerminal() {
 		return Terminal;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setTerminal(int Terminal) {
 		this.Terminal=Terminal;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public Airport() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

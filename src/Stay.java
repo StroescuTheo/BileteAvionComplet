@@ -12,11 +12,11 @@ public class Stay {
 	{
 		this.CheckinTime=CheckinTime;
 		this.CheckoutTime=CheckoutTime;
-		
+
 	}
-	public void CheckTimeValues() // a #test should be implemented on this.
+	public void CheckTimeValues() 
 	{
-		
+
 		String numberOnlyCI= this.CheckinTime.replaceAll("[^0-9]", "");
 		String numberOnlyCO= this.CheckoutTime.replaceAll("[^0-9]", "");
 		int nrCI=Integer.parseInt(numberOnlyCI);
@@ -26,24 +26,24 @@ public class Stay {
 	}
 	public String getCheckinTime() {
 		return CheckinTime;
-		
-		//throw new UnsupportedOperationException();
+
+
 	}
 
 	public void setCheckinTime(String CheckinTime) {
-		this.CheckinTime=CheckinTime;//throw new UnsupportedOperationException();
+		this.CheckinTime=CheckinTime;
 	}
 
 	public String getCheckoutTime() {
 		return CheckoutTime;
-		//	throw new UnsupportedOperationException();
+
 	}
 
 	public void setCheckoutTime(String CheckoutTime) {
-		this.CheckinTime=CheckoutTime;//	throw new UnsupportedOperationException();
+		this.CheckinTime=CheckoutTime;
 	}
 
 	public Stay() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

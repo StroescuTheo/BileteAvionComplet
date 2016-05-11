@@ -19,7 +19,7 @@ public class HotelReservation {
 		this.BedType=BedType;
 		this.NoRooms=NoRooms;
 	}
-	public float UpdatePrice(String BedType, int NoDays) //Calculeaza costul total al sederi
+	public float UpdatePrice(String BedType, int NoDays)
 	{
 		float TotalPrice= this.Price;
 		if(BedType=="King") TotalPrice*=2.5;
@@ -28,45 +28,45 @@ public class HotelReservation {
 	}
 	public int getNoDays() {
 		return NoDays;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setNoDays(int NoDays) {
 		this.NoDays=NoDays;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public float getPrice() {
 		return Price;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setPrice(float Price) {
 		this.Price=Price;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public String getBedType() {
 		return BedType;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setBedType(String BedType) {
 		this.BedType=BedType;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public int getNoRooms() {
 		return NoRooms;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setNoRooms(int NoRooms) {
 		this.NoRooms=NoRooms;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public HotelReservation() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

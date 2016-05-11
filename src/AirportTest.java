@@ -18,8 +18,8 @@ public class AirportTest {
 			System.out.println(a2.getLocation()+a2.getName()+a2.getGate()+a2.getTerminal());
 			System.out.println(a3.getLocation()+a3.getName()+a3.getGate()+a3.getTerminal());
 		}
-			//fail("Not yet implemented");
-			
+
+
 	}
 
 }

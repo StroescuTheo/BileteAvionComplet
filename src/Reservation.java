@@ -26,72 +26,72 @@ public class Reservation {
 	}
 	public static  void sortare (Reservation r[])
 	{
-	boolean sort=false;
-	int j=1;
-	while(!sort)
-	 {
-		sort=true;
-		for(int i=0;i<4-j;i++)
+		boolean sort=false;
+		int j=1;
+		while(!sort)
 		{
-			if(r[i].getTotalPrice()<r[i+1].getTotalPrice())
+			sort=true;
+			for(int i=0;i<4-j;i++)
 			{
-				Reservation Aux=r[i];
-				r[i]=r[i+1];
-				r[i+1]=Aux;
-				sort=false;
-				
+				if(r[i].getTotalPrice()<r[i+1].getTotalPrice())
+				{
+					Reservation Aux=r[i];
+					r[i]=r[i+1];
+					r[i+1]=Aux;
+					sort=false;
+
+				}
 			}
+			j++;
 		}
-		j++;
-	 }
 	}
 	public Flight getFlight() {
 		return Flight;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setFlight(Flight Flight) {
 		this.Flight=Flight;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public Hotel getHotel() {
 		return Hotel;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setHotel(Hotel Hotel) {
-		this.Hotel=Hotel;//throw new UnsupportedOperationException();
+		this.Hotel=Hotel;
 	}
 
 	public Date getReservationDate() {
 		return ReservationDate;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setReservationDate(Date ReservationDate) {
-		this.ReservationDate=ReservationDate;//	throw new UnsupportedOperationException();
+		this.ReservationDate=ReservationDate;
 	}
 
 	public float getTotalPrice() {
 		return TotalPrice;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setTotalPrice(float TotalPrice) {
-		this.TotalPrice=TotalPrice;//throw new UnsupportedOperationException();
+		this.TotalPrice=TotalPrice;
 	}
 
 	public String getPaymentType() {
 		return PaymentType;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setPaymentType(String PaymentType) {
-		this.PaymentType=PaymentType;//throw new UnsupportedOperationException();
+		this.PaymentType=PaymentType;
 	}
 
 	public Reservation() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

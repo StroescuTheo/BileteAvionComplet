@@ -12,7 +12,7 @@ public class Room {
 	{
 		this.RoomNo=RoomNo;
 		this.RoomType=RoomType;
-		
+
 	}
 	public void  RoomEQ(Room r)
 	{
@@ -21,30 +21,30 @@ public class Room {
 	}
 	public int getRoomNo() {
 		return RoomNo;
-		//	throw new UnsupportedOperationException();
+
 	}
 
 	public void setRoomNo(int RoomNo) {
-		this.RoomNo=RoomNo;//	throw new UnsupportedOperationException();
+		this.RoomNo=RoomNo;
 	}
 
 	public String getRoomType() {
 		return RoomType;
-		//	throw new UnsupportedOperationException();
+
 	}
 
 	public void setRoomType(String RoomType) {
-		this.RoomType=RoomType;//	throw new UnsupportedOperationException();
+		this.RoomType=RoomType;
 	}
 
 
 	public void setAttribute(int attribute) {
-		//	throw new UnsupportedOperationException();
+
 	}
 
 	public Room() {
 		this.RoomNo=1;
 		this.RoomType="Normal";
-		//	throw new UnsupportedOperationException();
+
 	}
 }

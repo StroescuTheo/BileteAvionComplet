@@ -6,7 +6,7 @@ public class Laguage {
 	private boolean Fragility;
 	private String Destination;
 	private boolean Lost;
-	static final int MaxWeight=120; //#define equivalent
+	static final int MaxWeight=120; 
 	public void Afisare()
 	{
 		System.out.println("Weight:"+Weight);
@@ -25,77 +25,77 @@ public class Laguage {
 		this.Destination=Destination;
 		this.Lost=Lost;
 	}
-	
+
 	public void ShipBack()
 	{
 		if(this.Weight<=MaxWeight)
 		{
 			System.out.println("This Laguage is to be shipped to"+this.getPossesorName() +" in "+this.getDestination());
-			
+
 		}
 	}
-	
+
 	public float getWeight() {
 		return Weight;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setWeight(float Weight) {
 		this.Weight=Weight;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public String getPossesorName() {
 		return PossesorName;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setPossesorName(String PossesorName) {
 		this.PossesorName=PossesorName;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public String getPhone() {
 		return Phone;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setPhone(String Phone) {
 		this.Phone=Phone;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public boolean getFragility() {
 		return Fragility;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public void setFragility(boolean Fragility) {
 		this.Fragility=Fragility;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public String getDestination() {
 		return Destination;
-		//	throw new UnsupportedOperationException();
+
 	}
 
 	public void setDestination(String Destination) {
 		this.Destination=Destination;
-		//throw new UnsupportedOperationException();
+
 	}
 
 	public boolean getLost() {
 		return Lost;
-		
-		//throw new UnsupportedOperationException();
+
+
 	}
 
 	public void setLost(boolean Lost) {
-		this.Lost=Lost;//throw new UnsupportedOperationException();
+		this.Lost=Lost;
 	}
 
 	public Laguage() {
-		//throw new UnsupportedOperationException();
+
 	}
 }

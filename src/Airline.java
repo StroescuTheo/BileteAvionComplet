@@ -15,7 +15,6 @@ public class Airline {
 		System.out.println("PilotName:"+PilotName);
 		System.out.println("PlaneModel:"+PlaneModel);
 		System.out.println("PlaneNo:"+PlaneNo);
-		//System.out.println("Route:"+Ruta);
 		Ruta.Afisare();
 	}
 	public Airline(String Name,String Phone,String PilotName,String PlaneModel,int PlaneNo, Route Ruta)
@@ -29,87 +28,87 @@ public class Airline {
 	}
 	public static  void sortare (Airline a[])
 	{
-	boolean sort=false;
-	int j=1;
-	while(!sort)
-	 {
-		sort=true;
-		for(int i=0;i<4-j;i++)
+		boolean sort=false;
+		int j=1;
+		while(!sort)
 		{
-			if(a[i].getPlaneNo()<a[i+1].getPlaneNo())
+			sort=true;
+			for(int i=0;i<4-j;i++)
 			{
-				Airline Aux=a[i];
-				a[i]=a[i+1];
-				a[i+1]=Aux;
-				sort=false;
-				
+				if(a[i].getPlaneNo()<a[i+1].getPlaneNo())
+				{
+					Airline Aux=a[i];
+					a[i]=a[i+1];
+					a[i+1]=Aux;
+					sort=false;
+
+				}
 			}
+			j++;
 		}
-		j++;
-	 }
 	}
 	public String getName() {
-		//throw new UnsupportedOperationException();
-	return Name;
+
+		return Name;
 	}
 
 	public void setName(String Name) {
 		this.Name=Name;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public String getPhone() {
 		return Phone;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setPhone(String Phone) {
 		this.Phone=Phone;
-		
-	//	throw new UnsupportedOperationException();
+
+
 	}
 
 	public String getPilotName() {
 		return PilotName;
-		
-//		throw new UnsupportedOperationException();
+
+
 	}
 
 	public void setPilotName(String PilotName) {
-	this.PilotName=PilotName;//	throw new UnsupportedOperationException();
+		this.PilotName=PilotName;
 	}
 
 	public String getPlaneModel() {
 		return PlaneModel;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setPlaneModel(String PlaneModel) {
 		this.PlaneModel=PlaneModel;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public int getPlaneNo() {
 		return PlaneNo;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setPlaneNo(int PlaneNo) {
 		this.PlaneNo=PlaneNo;
-//		throw new UnsupportedOperationException();
+
 	}
 	public Route getRoute() {
 		return Ruta;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setRoute(Route Ruta) {
 		this.Ruta=Ruta;
-//		throw new UnsupportedOperationException();
+
 	}
 	public Airline() {
-		
-//		throw new UnsupportedOperationException();
+
+
 	}
-	
+
 }

@@ -6,7 +6,7 @@ public class DetaliiZbor {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+
 		String a1 = "Ion Marian";
 		float a2 = 450;
 		int a3 = 12;
@@ -25,14 +25,14 @@ public class DetaliiZbor {
 		f.setArrivalTime(a5);
 		ro.setDeparture(a6);
 		ro.setArrival(a7);
-		
+
 		System.out.println("Domnule "+cc.getName());
 		System.out.println("Ati facut rezervare pentru zborul "+f.getNumber()+" "+ro.getDeparture()+"-"+ro.getArrival());
 		System.out.println("Plecare este la ora "+f.getDepartureTime());
 		System.out.println("Avionul ajunge la destinatie la ora "+f.getArrivalTime());
 		System.out.println("Pretul zborului este "+fr.getPrice()+" EUR");
 		System.out.println("Calatorie placuta!");
-		
+
 	}
 
 }

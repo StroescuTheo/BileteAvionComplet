@@ -26,8 +26,6 @@ public class CustomerTest {
 		abc.setSurname(a2);
 		abc.setVarsta(n);
 		abc.CalcVarsta(abc);
-		
-		//fail("Not yet implemented");
 	}
 
 }

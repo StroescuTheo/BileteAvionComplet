@@ -18,35 +18,35 @@ public class FlightReservation {
 	}
 	public int getFlightNo() {
 		return FlightNo;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setFlightNo(int FlightNo) {
 		this.FlightNo=FlightNo;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public int getNoOfSeats() {
 		return NoOfSeats;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setNoOfSeats(int NoOfSeats) {
 		this.NoOfSeats=NoOfSeats;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public float getPrice() {
 		return Price;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public void setPrice(float Price) {
 		this.Price=Price;
-//		throw new UnsupportedOperationException();
+
 	}
 
 	public FlightReservation() {
-//		throw new UnsupportedOperationException();
+
 	}
 }
