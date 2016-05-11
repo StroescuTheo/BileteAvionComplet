@@ -11,6 +11,7 @@ public class HotelReservation {
 		System.out.println("Price:"+Price);
 		System.out.println("BedType:"+BedType);
 		System.out.println("NoRooms:"+NoRooms);
+		System.out.println();
 	}
 	public HotelReservation(int NoDays,float Price,String BedType,int NoRooms)
 	{
