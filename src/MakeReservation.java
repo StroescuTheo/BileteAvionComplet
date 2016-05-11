@@ -65,7 +65,7 @@ public class MakeReservation {
 		 System.out.println("");
 		 System.out.print("Mr. "+c.getName()+" from "+c.getAdress()+" will be staying at the "+ HotelChoise + " hotel in "+ UserChoise);
 		 System.out.println("In room: ");
-		 Room x=(h[intHotel].ReturnAnyRoomAvailable());
+		 Room x=(h[intHotel].ReturnAnyRoomAvailable(rooms));
 		 x.Afisare();
 //		fail("Not yet implemented");
 	}

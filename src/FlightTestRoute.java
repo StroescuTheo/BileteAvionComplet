@@ -23,7 +23,7 @@ public class FlightTestRoute {
 		Airline e[] = { new Airline("BlueAir","01234534","Emma","Elico990",320, r[2]) ,
 		                new Airline("BlueAir","3210352","Marius","Boing302",130, r[4]) ,
 		                new Airline("BlueAir","4563232","Alin","Jet404",56, r[0]),
-		                new Airline("BlueAir","9854232","Alex","Boing402",2 , r[1]),
+		                new Airline("BlueAir","9854232","Alex","Boing402",2 , r[0]),
 		                new Airline("BlueAir","9858542","Iulian","Snipper32", 2 , r[3])} ;
 		
 		Flight f[] = {new Flight(12,"12:45","12:30",4,"14:45","6 libere", e[0]),
@@ -32,15 +32,21 @@ public class FlightTestRoute {
 				         new Flight(14,"12:45","12:30",3,"14:45","7 libere", e[1]),
 				           new Flight(15,"12:45","12:30",9,"14:45","8 libere", e[4])};
 		
+		
+		//String numberOnlyCI= this.CheckinTime.replaceAll("[^0-9]", "");
+		
+		
 		boolean sort=false;
+		
 		int j=1;
 		while(!sort)
 		 {
 			sort=true;
 			for(int i=0;i<4-j;i++)
 			{
-				if(f[i].getNumber()<f[i].getNumber())
-				//if(Integer.parseInt(f[i].getDepartureTime())>Integer.parseInt(f[i+1].getDepartureTime()))
+				//if(f[i].getNumber()<f[i].getNumber())
+//				System.out.println(Integer.parseInt(f[i].getDepartureTime().replaceAll("[^0-9]", "")));
+				if(Integer.parseInt(f[i].getDepartureTime().replaceAll("[^0-9]", ""))>Integer.parseInt(f[i+1].getDepartureTime().replaceAll("[^0-9]", "")))
 				{
 					Flight Aux=f[i];
 					f[i]=f[i+1];

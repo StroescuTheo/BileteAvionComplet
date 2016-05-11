@@ -14,18 +14,29 @@ public class Hotel {
 		this.Name=Name;
 //		throw new UnsupportedOperationException();
 	}
+	
+	public Room[] getRoom()
+	{
+		return this.Rooms;
+	}
 
 	public int getStars() {
 		return Stars;
 //		throw new UnsupportedOperationException();
 	}
 
-	public Room ReturnAnyRoomAvailable()
+	public Room ReturnAnyRoomAvailable(Room roomss[])
 	{
-		for( int i=0;i<this.Rooms.length;i++)
+		
+		//System.out.println("teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest");
+	//	System.out.println("Length:"+(this.getRoom()).length +" dsa");
+		//this.Rooms[0].Afisare();
+		for( int i=0;i<roomss.length;i++)
 		{
-			if(this.Rooms[i].getRoomNo()!=0)
-				return this.Rooms[i];
+			//System.out.println("teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeest");
+			//				
+			if(roomss[i].getRoomNo()!=0)
+				return roomss[i];
 			
 		}
 		return new Room();
@@ -45,6 +56,7 @@ public class Hotel {
 		System.out.println("Stars:"+Stars);
 	}
 	public Hotel() {
+		
 		for(int i=0;i<Rooms.length;i++)
 			this.Rooms[i]= new Room();
 		//throw new UnsupportedOperationException();
@@ -57,6 +69,7 @@ public class Hotel {
 	}
 	public Hotel(String Name,int Stars, Room [] rooms)
 	{
+		//System.out.println("test hit////////////////////////////////////////"+rooms.length);
 		this.Name=Name;
 		this.Stars=Stars;
 		for(int i=0;i<rooms.length;i++)
