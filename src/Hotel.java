@@ -15,6 +15,17 @@ public class Hotel {
 //		throw new UnsupportedOperationException();
 	}
 
+	public Room[] getRooms() {
+		return Rooms;
+//		throw new UnsupportedOperationException();
+	}
+	
+
+	public void setRooms(Room[] Rooms) {
+		this.Rooms=Rooms;
+//		throw new UnsupportedOperationException();
+	}
+	
 	public int getStars() {
 		return Stars;
 //		throw new UnsupportedOperationException();
@@ -43,6 +54,14 @@ public class Hotel {
 	{
 		System.out.println("Nume:"+Name);
 		System.out.println("Stars:"+Stars);
+		
+	}
+	public void AfisareR()
+	{
+		System.out.println("Nume:"+Name);
+		System.out.println("Stars:"+Stars);
+		for(int i=0; i<=Rooms.length ; i++)
+		Rooms[i].Afisare();
 	}
 	public Hotel() {
 		for(int i=0;i<Rooms.length;i++)
